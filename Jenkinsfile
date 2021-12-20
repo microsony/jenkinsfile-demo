@@ -24,7 +24,5 @@ pipeline {
               echo "deplolying the application..."
           }
       }
-      }
-      }
-   }
-}
+    }
+ }
