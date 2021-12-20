@@ -1,6 +1,6 @@
 pipeline {
 
-    agent Slave1
+    agent { label 'Slave1' }
    
    stages {
     
@@ -9,12 +9,14 @@ pipeline {
           steps {
               echo "Building the application..."
           }
+          }
           
       stage ("test") {
           
           steps {
               echo "testing the application..."
           }
+      }
      
       stage ("deploy") {
           
@@ -22,5 +24,5 @@ pipeline {
               echo "deplolying the application..."
           }
       }
-   }
-}
+    }
+ }
